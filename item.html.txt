@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Item Information</title>
+</head>
+<body style="font-family: Arial; text-align:center; padding:50px;">
+
+  <div style="border:1px solid #ccc; padding:20px; display:inline-block;">
+    <h2 id="owner"></h2>
+    <p id="contact"></p>
+  </div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+  const items = {
+    "1001": {
+      name: "Nathalie V. Udani",
+      contact: "Please call: 09061922690"
+    },
+    "1002": {
+      name: "Juan Dela Cruz",
+      contact: "Please call: 09123456789"
+    }
+  };
+
+  if(items[id]){
+    document.getElementById("owner").innerText =
+      "This item belongs to " + items[id].name;
+    document.getElementById("contact").innerText =
+      items[id].contact;
+  } else {
+    document.getElementById("owner").innerText =
+      "Item not registered.";
+  }
+</script>
+
+</body>
+</html>

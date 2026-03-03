@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lost & Found QR System</title>
+</head>
+<body style="font-family: Arial; text-align:center; padding:50px;">
+
+  <h1>Lost & Found QR Code System</h1>
+  <p>If you found an item, please scan the QR code attached.</p>
+
+</body>
+</html>
